@@ -1,3 +1,4 @@
+#include <stdio.h>
 //数据类型
 //char      //字符数据类型
 //short     //短整型
@@ -6,12 +7,12 @@
 //long long //更长的整型
 //float     //单精度浮点数
 //double    //双精度浮点数
-#include <stdio.h>
-char a = 'a';
-int age = 20;
-short num = 10;
-float weight = 55.5;
-double d = 0.0;
+
+//char a = 'a';
+//int age = 20;
+//short num = 10;
+//float weight = 55.5;
+//double d = 0.0;
 int main(){
 	//printf("hehe\n");
 	//printf("%d\n",100);  //打印一个整数 - %d
