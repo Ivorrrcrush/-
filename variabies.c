@@ -1,3 +1,5 @@
+#define _CRT_SECURE_NO_WARNINGS 1;
+
 #include <stdio.h>
 
  	int a = 100; //全局变量 - {}外部定义的
@@ -25,3 +27,16 @@
 //------------------------------------
 //写一个代码求2个整数的和
 //scanf函数是输入函数
+
+
+int main() {
+	int a = 0;
+	int b = 0;
+	int sum = 0;
+	scanf("%d %d", &a, &b);
+	sum = a + b;
+	printf("sum = %d\n", sum);
+	return 0;
+
+	//scanf_s函数 - VS编译提供的，不是C语言标准规定的
+}
