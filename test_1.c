@@ -1,7 +1,6 @@
 #define _CRT_SECURE_NO_WARNINGS 1;
 #include <stdio.h>
 
-//十个数中找最大值
 //int main() {
 //
 //	//数组
@@ -26,26 +25,39 @@
 //	return 0;
 //}
 
-//十个整数的平均值
+//int main() {
+//	//数组
+//	int arr[10] = { 0 };
+//	//输入
+//	int i = 0;
+//	int sum = 0;
+//	for (i = 0; i < 10; i++) {
+//		scanf("%d", &arr[i]);
+//		sum += arr[i];
+//	}
+//	//求和
+//	//int sum = 0;
+//	//for (i = 0; i <= 9; i++) {
+//	//	sum += arr[i];
+//	//}
+//	//求平均数
+//	int a = sum / 10;
+//	//输出
+//	printf("a = %d\n", a);
+//	
+//	return 0;
+//}
+
 int main() {
-	//数组
-	int arr[10] = { 0 };
-	//输入
+	int arr[] = { 1,2,3,4,5,6,7,8,9,10 };
 	int i = 0;
-	int sum = 0;
-	for (i = 0; i < 10; i++) {
-		scanf("%d", &arr[i]);
-		sum += arr[i];
-	}
-	//求和
-	//int sum = 0;
-	//for (i = 0; i <= 9; i++) {
-	//	sum += arr[i];
+	int* p = arr;
+	//for (i = 0; i < 10; i++) {
+	//	printf("%d ", arr[i]);
 	//}
-	//求平均数
-	int a = sum / 10;
-	//输出
-	printf("a = %d\n", a);
-	
-	return 0;
+	for (i = 0; i < 10; i++) {
+		printf("%d ", *p);
+		p++;
+	}
+
 }
