@@ -1,63 +1,21 @@
 #define _CRT_SECURE_NO_WARNINGS 1;
 #include <stdio.h>
-
-//int main() {
-//
-//	//æ•°ç»„
-//	int arr[10] = { 0 };
-//
-//	//è¾“å…¥
-//	int i = 0;
-//	for (i = 0; i < 10; i++) {
-//		scanf("%d\n", &arr[i]);
-//	}
-//
-//	//æ‰¾æœ€å¤§å€¼
-//	int max = 0;
-//	for (i = 0; i <= 9; i++) {
-//		if (max < arr[i]) {
-//			max = arr[i];
-//		}
-//	}
-//	//è¾“å‡º
-//	printf("max = %d\n", max);
-//
-//	return 0;
-//}
-
-//int main() {
-//	//æ•°ç»„
-//	int arr[10] = { 0 };
-//	//è¾“å…¥
-//	int i = 0;
-//	int sum = 0;
-//	for (i = 0; i < 10; i++) {
-//		scanf("%d", &arr[i]);
-//		sum += arr[i];
-//	}
-//	//æ±‚å’Œ
-//	//int sum = 0;
-//	//for (i = 0; i <= 9; i++) {
-//	//	sum += arr[i];
-//	//}
-//	//æ±‚å¹³å‡æ•°
-//	int a = sum / 10;
-//	//è¾“å‡º
-//	printf("a = %d\n", a);
-//	
-//	return 0;
-//}
-
 int main() {
-	int arr[] = { 1,2,3,4,5,6,7,8,9,10 };
+	//Êý×é
+	int arr[10] = { 0 };
+	//ÊäÈë
 	int i = 0;
-	int* p = arr;
-	//for (i = 0; i < 10; i++) {
-	//	printf("%d ", arr[i]);
-	//}
-	for (i = 0; i < 10; i++) {
-		printf("%d ", *p);
-		p++;
+	for (int i = 0; i < 10; i++) {
+		scanf("%d\n", &arr[i]);
+	}
+	//ÕÒ×î´óÖµ
+	int max = arr[0];
+	for (i = 1; i < 10; i++) {
+		if (max < arr[i]) {
+			max = arr[i];
+		}
 	}
 
+	//Êä³ö
+	printf("max = %d\n", max);
 }
