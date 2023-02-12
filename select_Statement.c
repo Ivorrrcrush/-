@@ -41,3 +41,70 @@
 	/*if (age >= 18) {
 		printf("%s\n", "成年");
 	}*/
+	
+
+//int main() {
+//	int a = 0;
+//	int b = 2;
+//	if (a == 1) {
+//		if (b == 2) {
+//			printf("hehe\n");
+//		}else {
+//			printf("haha\n");
+//		}
+//	}
+//}
+
+
+//int test() {
+//	if (0) {
+//		return 1;
+//	}
+//	return 0;
+//}
+//int main() {
+//	test();
+//	return 0;
+//}
+
+
+//int main() {
+//	int num = 3;
+//	//if (num == 5)
+//	if(5 =num){
+//		printf("hehe\n");
+//	}
+//	return 0;
+//}
+
+int main() {
+	//判断一个数是不是奇数
+	//int num;
+	//scanf("%d", &num);
+	//if ( 1 == (num % 2)) {
+	//	printf("%d是%s\n", num, "奇数");
+	//}else {
+	//	printf("%d不是%s\n", num, "奇数");
+	//	return 0;
+	//}
+
+	//打印1-100之间的奇数
+	int a = 1;
+
+	for (int sum = 1; sum <= 100; sum++) {
+
+		a++;
+
+		if (1 == (sum % 2)) {
+
+			printf("%d ", sum);
+
+			if (0 == (a % 5)) {
+
+				printf("\n");
+
+			}
+		}
+	}
+	return 0;
+}
