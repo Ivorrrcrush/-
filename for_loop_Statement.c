@@ -33,3 +33,17 @@
 //	}
 //	return 0;
 //}
+
+
+//int main() {
+//初始化省略
+//	int i = 0;
+//	
+//	int j = 0;
+//	for (; i < 3; i++) {
+//		for (; j < 3; j++) {
+//			printf("hehe\n");
+//		}
+//	}
+//	return 0;
+//}
