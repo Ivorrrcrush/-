@@ -6,10 +6,15 @@ int main() {
 	int sum = 0;
 	scanf("%d", &n);
 	//计算1!+2!+3!....+10!
-	for (j = 1; j <= n; j++) {
-		for (i = 1; i <= n; i++) {
+	/*for (j = 1; j <= n; j++) {
+		for (i = 1; i <= j; i++) {
 			a *= i;
 		}
+		sum += a;
+		a = 1;
+	}*/
+	for (i = 1; i <= n; i++) {
+		a *= i;
 		sum += a;
 	}
 
