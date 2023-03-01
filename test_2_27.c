@@ -20,3 +20,27 @@ int main() {
 }
 //苛待补充.....
 //
+int main() {
+	int a, b, c;
+	scanf("%d%d",&a,&b);
+	//int c = a % b;
+	/*while (1) {
+		if (a % b != 0) {
+			a = b;
+			b = c;
+		}
+		else {
+			printf("%d\n", c);
+			break;
+		}
+	}*/
+
+	while (c = a % b) {
+		a = b;
+		b = c;
+	}
+
+	printf("%d\n", b);
+
+	return 0;
+}
