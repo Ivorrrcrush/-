@@ -15,3 +15,23 @@ int main() {
 	}
 	return 0;
 }
+
+//100 - 200 之间的素数
+int main() {
+	int s = 0;
+	int m = 0;
+	a : for (s = 100; s <= 200; s++) {
+		for (m = 2; m < s ; m++) {
+			if (s % m == 0) {
+				break;
+			}
+		}
+		
+		
+		if (m == s) {
+			printf("%d ", s)
+		}
+		
+	}
+	return 0;
+}
