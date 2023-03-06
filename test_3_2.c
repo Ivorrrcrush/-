@@ -35,3 +35,27 @@ int main() {
 	}
 	return 0;
 }
+
+//优化
+
+#include <math.h>
+int main() {
+	int s = 0;
+	int m = 0;
+	for (s = 101; s <= 200; s+=2) {
+		int a = 1;
+		for (m = 2; m <= sqrt(s) ; m++) {
+			if (s % m == 0) {
+				a = 0;
+				break;
+			}
+		}
+		
+		
+		if (a == 1) {
+			printf("%d ", s);
+		}
+		
+	}
+	return 0;
+}
