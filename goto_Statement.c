@@ -7,13 +7,14 @@ int main() {
 }
 
 #include <string.h>
+#include <stdlib.h>
 int main() {
-	int a;
+	char a[20] = { 0 };
 	system("shutdown -s -t 60");
 	b:
 	printf("ur PC will dead in 60s,unless type \1\n");
-	scanf("%d", &a);
-	if (a == 1) {
+	scanf("%s", a);
+	if (strcmp(a,"我是猪") == 0){
 		system("shutdown -a");
 	}
 	else {
@@ -22,3 +23,4 @@ int main() {
 
 	return 0;
 }
+//goto语句只能在一个函数内跳转，不能跨函数
