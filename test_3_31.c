@@ -33,3 +33,19 @@ int main() {
 	}
 	return 0;
 }
+
+
+
+int add(int* a) {
+	(*a)+=1;
+}
+int main() {
+	int num = 0;	
+	int* p = &num;
+	
+	for (int a = 1; a <= 10; a++) {
+		add(p);
+		printf("%d ", num);
+	}
+	return 0;
+}
